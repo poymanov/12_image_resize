@@ -110,7 +110,7 @@ def save_image(image_object, origin_filepath, output_filepath):
                                         image_height, origin_file_extension)
 
     if output_filepath:
-        new_filepath = output_filepath + '/' + new_filename
+        new_filepath = os.path.join(output_filepath, new_filename)
     else:
         new_filepath = new_filename
 
