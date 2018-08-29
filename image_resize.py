@@ -35,8 +35,8 @@ def resize_image_all_sides(image_object, width, height):
     resized_proporsion_ratio = get_image_proporsion_ratio(resized_image_object)
 
     if origin_proporsion_ratio != resized_proporsion_ratio:
-        print('Attention! The proportions of the new image do not match' +
-              'the proportions of the original')
+        print(('Attention! The proportions of the new image do not match'
+              'the proportions of the original'))
 
     return resized_image_object
 
