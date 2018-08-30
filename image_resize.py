@@ -24,7 +24,7 @@ def validate_arguments(args):
         return 'You must specify at least one argument.'
     elif (width or height) and scale:
         return 'You must specify only width/height or scale. Not both.'
-    elif not all(item is None or item > 0 for item in [width, height, scale]):
+    elif not all(arg is None or arg > 0 for arg in [width, height, scale]):
         return 'Values of arguments must be greater than 0'
 
 
