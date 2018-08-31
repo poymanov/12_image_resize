@@ -98,8 +98,8 @@ def resize_image(image, new_sizes):
     return image.resize(new_sizes)
 
 
-def save_image(image, file, output_path):
-    filename, extension = os.path.splitext(file)
+def save_image(image, origin_file, output_path):
+    filename, extension = os.path.splitext(origin_file)
     width = image.width
     height = image.height
     new_filename = '{}__{}x{}{}'.format(filename, width, height, extension)
